@@ -56,13 +56,58 @@ body {
     top: 30%;
     transform: translate(-50%, -50%);
 }
+
 .hero-area h1 {
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-area-primary {
+    display: block;
     letter-spacing: 35px;
     font-size: 60px;
-    text-transform: uppercase;
+    font-weight: 400;
+    animation-name: moveToLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
 }
-.hero-area h1 span {
+.hero-area-sub {
     display: block;
-    font-size: 35%;
-    letter-spacing: 18px;
+    font-size: 20px;
+    letter-spacing: 15px;
+    font-weight: 700;
+    animation-name: moveToRight;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+}
+
+
+
+/* Animate Hero Area's Text */
+@keyframes moveToLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    80% {
+        transform: translateX(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes moveToRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    80% {
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }
