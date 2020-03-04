@@ -53,8 +53,9 @@ body {
 .hero-area {
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 35%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .hero-area h1 {
@@ -79,11 +80,12 @@ body {
     animation-name: moveToRight;
     animation-duration: 1s;
     animation-timing-function: ease-in;
+    margin-bottom: 60px;
 }
 
 
 
-/* Animate Hero Area's Text */
+/* Keyframes Animation */
 @keyframes moveToLeft {
     0% {
         opacity: 0;
@@ -110,4 +112,67 @@ body {
         opacity: 1;
         transform: translate(0);
     }
+}
+
+@keyframes moveToTop {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 15px 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 100px;
+    position: relative;
+    transition: all .2s;
+}
+
+.btn-white {
+    background: #fff;
+    color: #777;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0 ,0 ,0, .2);
+}
+
+.btn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0 ,0 ,0, .2);
+}
+
+.btn::after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 100px;
+    transition: all .4s;
+}
+.btn-white::after {
+    background: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveToTop .5s ease-out .75s;
+    animation-fill-mode: backwards;
 }
