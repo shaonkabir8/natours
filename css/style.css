@@ -45,18 +45,18 @@ body {
 }
 
 
-.logo {
+.header__logo-box {
     position: absolute;
     left: 3rem;
     top: 3rem;
     
 }
 
-.logo img {
+.header__logo {
     height: 3.5rem;
 }
 
-.hero-area {
+.header__hero-area {
     position: absolute;
     left: 50%;
     top: 35%;
@@ -64,12 +64,12 @@ body {
     text-align: center;
 }
 
-.hero-area h1 {
+.heading-primary {
     text-transform: uppercase;
     color: #fff;
 }
 
-.hero-area-primary {
+.heading-primary--main {
     display: block;
     letter-spacing: 3.5rem;
     font-size: 6rem;
@@ -78,7 +78,7 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in;
 }
-.hero-area-sub {
+.heading-primary--sub {
     display: block;
     font-size: 2rem;
     letter-spacing: 1.5rem;
@@ -143,7 +143,7 @@ body {
     transition: all .2s;
 }
 
-.btn-white {
+.btn--white {
     background: #fff;
     color: #777;
 }
@@ -170,7 +170,7 @@ body {
     border-radius: 10rem;
     transition: all .4s;
 }
-.btn-white::after {
+.btn--white::after {
     background: #fff;
 }
 
@@ -179,7 +179,7 @@ body {
     opacity: 0;
 }
 
-.btn-animated {
+.btn--animated {
     animation: moveToTop .5s ease-out .75s;
     animation-fill-mode: backwards;
 }
