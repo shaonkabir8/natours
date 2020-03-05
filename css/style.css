@@ -7,19 +7,25 @@ Dark green: #28b485
 
 */
 
-* {
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
     line-height: 1.7;
     font-weight: 400;
     color: #fff;
-    padding: 30px;
+    padding: 3rem;
+    box-sizing: border-box;
 }
 
 
@@ -41,13 +47,13 @@ body {
 
 .logo {
     position: absolute;
-    left: 30px;
-    top: 30px;
+    left: 3rem;
+    top: 3rem;
     
 }
 
 .logo img {
-    height: 35px;
+    height: 3.5rem;
 }
 
 .hero-area {
@@ -65,8 +71,8 @@ body {
 
 .hero-area-primary {
     display: block;
-    letter-spacing: 35px;
-    font-size: 60px;
+    letter-spacing: 3.5rem;
+    font-size: 6rem;
     font-weight: 400;
     animation-name: moveToLeft;
     animation-duration: 1s;
@@ -74,13 +80,13 @@ body {
 }
 .hero-area-sub {
     display: block;
-    font-size: 20px;
-    letter-spacing: 15px;
+    font-size: 2rem;
+    letter-spacing: 1.5rem;
     font-weight: 700;
     animation-name: moveToRight;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 }
 
 
@@ -89,10 +95,10 @@ body {
 @keyframes moveToLeft {
     0% {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateX(-10rem);
     }
     80% {
-        transform: translateX(10px);
+        transform: translateX(1rem);
     }
     100% {
         opacity: 1;
@@ -103,10 +109,10 @@ body {
 @keyframes moveToRight {
     0% {
         opacity: 0;
-        transform: translateX(100px);
+        transform: translateX(10rem);
     }
     80% {
-        transform: translateX(-10px);
+        transform: translateX(-1rem);
     }
     100% {
         opacity: 1;
@@ -117,7 +123,7 @@ body {
 @keyframes moveToTop {
     0% {
         opacity: 0;
-        transform: translateY(30px);
+        transform: translateY(3rem);
     }
     100% {
         opacity: 1;
@@ -128,10 +134,11 @@ body {
 .btn:link,
 .btn:visited {
     display: inline-block;
-    padding: 15px 40px;
+    font-size: 1.6rem;
+    padding: 1.5rem 4rem;
     text-decoration: none;
     text-transform: uppercase;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: relative;
     transition: all .2s;
 }
@@ -143,12 +150,12 @@ body {
 
 .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0 ,0 ,0, .2);
+    box-shadow: 0 1rem 2rem rgba(0 ,0 ,0, .2);
 }
 
 .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(0 ,0 ,0, .2);
+    box-shadow: 0 .5rem 1rem rgba(0 ,0 ,0, .2);
 }
 
 .btn::after {
@@ -160,7 +167,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .4s;
 }
 .btn-white::after {
