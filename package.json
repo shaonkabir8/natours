@@ -1,0 +1,22 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "A coolest projects using only pure css",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaonkabir8/natours.git"
+  },
+  "author": "Shaon Kabir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shaonkabir8/natours/issues"
+  },
+  "homepage": "https://github.com/shaonkabir8/natours#readme",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
