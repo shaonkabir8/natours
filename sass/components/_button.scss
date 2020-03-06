@@ -55,3 +55,27 @@
     }
 
 }
+
+.btn-text {
+    &:link,
+    &:visited {
+        font-size: 1.6rem;
+        text-decoration: none;
+        color: $color-primary;
+        display: inline-block;
+        padding: 3px;
+        transition: all .2s;
+        border-bottom: 1px solid $color-primary;
+    }
+
+    &:hover {
+        transform: translateY(-2px);
+        background-color: $color-primary;
+        color: $color-white;
+        box-shadow: .5rem 1rem 2rem rgba($color-black, .15);
+    }
+
+    &:active{
+        transform: translate(0);
+    }
+}
