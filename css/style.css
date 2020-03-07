@@ -322,12 +322,12 @@ body {
     font-weight: 100; }
 
 .story {
-  background-color: #fff;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 6rem;
   padding-left: 9rem;
   margin: 0 auto;
   width: 75%;
-  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.2);
   font-size: 1.6rem;
   transform: skewX(-12deg);
   transition: all .3s; }
@@ -366,6 +366,19 @@ body {
   .story:hover .story__caption {
     opacity: 1;
     transform: translate(-50%, -50%); }
+
+.bg-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .15;
+  z-index: -1; }
+  .bg-video__content {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 .header {
   position: relative;
@@ -436,6 +449,6 @@ body {
   margin-top: -10rem; }
 
 .section-story {
-  background-color: #f7f7f7;
+  position: relative;
   padding: 15rem 0;
   color: #777; }

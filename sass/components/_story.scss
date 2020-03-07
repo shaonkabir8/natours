@@ -1,10 +1,10 @@
 .story {
-    background-color: $color-white;
+    background-color: rgba($color-white, .6);
     padding: 6rem;
     padding-left: 9rem;
     margin: 0 auto;
     width: 75%;
-    box-shadow: 0 3rem 6rem rgba($color-black, .3);
+    box-shadow: 0 3rem 6rem rgba($color-black, .2);
     font-size: 1.6rem;
     transform: skewX(-12deg);
     transition: all .3s;
