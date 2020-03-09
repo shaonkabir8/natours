@@ -9,6 +9,7 @@ body {
 .heading-primary {
     text-transform: uppercase;
     color: $color-white;
+    font-family: 'Alfa Slab One', cursive;
 
     &--main {
         display: block;
@@ -23,7 +24,8 @@ body {
         display: block;
         font-size: 2rem;
         letter-spacing: 1.5rem;
-        font-weight: 700;
+        font-weight: 100;
+        font-style: italic;
         animation-name: moveToRight;
         animation-duration: 1s;
         animation-timing-function: ease-in;

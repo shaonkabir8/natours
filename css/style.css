@@ -48,7 +48,8 @@ body {
 
 .heading-primary {
   text-transform: uppercase;
-  color: #fff; }
+  color: #fff;
+  font-family: 'Alfa Slab One', cursive; }
   .heading-primary--main {
     display: block;
     letter-spacing: 3.5rem;
@@ -61,7 +62,8 @@ body {
     display: block;
     font-size: 2rem;
     letter-spacing: 1.5rem;
-    font-weight: 700;
+    font-weight: 100;
+    font-style: italic;
     animation-name: moveToRight;
     animation-duration: 1s;
     animation-timing-function: ease-in;
@@ -663,7 +665,8 @@ body {
 
 .section-features {
   padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/nat-4.jpg");
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url("../../img/sajek-2.jpg");
+  background-attachment: fixed;
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
@@ -686,8 +689,9 @@ body {
   color: #777; }
 
 .book {
-  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/nat-10.jpg);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/sea.jpg);
   background-size: 100%;
+  background-position: center;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: 3px; }
 

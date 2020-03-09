@@ -13,7 +13,8 @@
         to right bottom,
          rgba($color-primary-light, 0.8),
           rgba($color-primary-dark, 0.8)),
-          url('../../img/nat-4.jpg');
+          url('../../img/sajek-2.jpg');
+    background-attachment: fixed;
     background-size: cover;
     transform: skewY(-7deg);
     margin-top: -10rem;
@@ -49,8 +50,9 @@
         rgba($color-white, .9) 50%,
         transparent 50%,
         ),
-    url(../img/nat-10.jpg);
+    url(../img/sea.jpg);
     background-size: 100%;
+    background-position: center;
     box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
     border-radius: 3px;
     // height: 50rem;
