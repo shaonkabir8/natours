@@ -39,7 +39,7 @@ $device will accept:-
         @media(max-width: 75em) { @content }        //  75em =  1200px
     }
 
-    @if $device == big-dektop {
+    @if $device == big-desktop {
         @media(min-width: 112.5em) { @content }     //  112.5em = 1800px
     } 
 }

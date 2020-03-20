@@ -44,6 +44,15 @@ $device will accept:-
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 *,
 *::after,
@@ -53,14 +62,17 @@ html {
   box-sizing: inherit; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 3rem; }
+  @media (max-width: 37.5em) {
+    body {
+      padding: 0; } }
 
 body {
   font-family: 'Lato', sans-serif;
   line-height: 1.7;
   font-weight: 400;
-  color: #fff;
-  padding: 3rem; }
+  color: #fff; }
 
 .heading-primary {
   text-transform: uppercase;
@@ -74,6 +86,10 @@ body {
     animation-name: moveToLeft;
     animation-duration: 1s;
     animation-timing-function: ease-in; }
+    @media (max-width: 37.5em) {
+      .heading-primary--main {
+        letter-spacing: 1rem;
+        font-size: 5rem; } }
   .heading-primary--sub {
     display: block;
     font-size: 2rem;
@@ -84,6 +100,9 @@ body {
     animation-duration: 1s;
     animation-timing-function: ease-in;
     margin-bottom: 6rem; }
+    @media (max-width: 37.5em) {
+      .heading-primary--sub {
+        letter-spacing: .5rem; } }
 
 .heading-secondary {
   text-transform: uppercase;
@@ -96,6 +115,12 @@ body {
   -webkit-background-clip: text;
   letter-spacing: .2rem;
   transition: all .2s; }
+  @media (max-width: 56.25em) {
+    .heading-secondary {
+      font-size: 3rem; } }
+  @media (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
   .heading-secondary:hover {
     transform: skewY(2deg) skewX(15deg);
     text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
