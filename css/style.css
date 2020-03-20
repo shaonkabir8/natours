@@ -1,3 +1,19 @@
+/*
+0 - 600px       => Mobile Phone
+600px - 900px   => Tablet Portrait
+900px - 1200px  => Desktop/Tablet Landscape
+1200px - 1800px => Large Device
+
+$device will accept:-
+-phone
+-tablet
+-desktop
+-big-dekstop
+
+=> Unit Conversion for media queries [we'll use 'em' instead of 'rem' / 'px'
+    
+1em = 16px;
+*/
 @keyframes moveToLeft {
   0% {
     opacity: 0;

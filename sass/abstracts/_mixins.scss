@@ -5,3 +5,41 @@
         clear: both;
     }
 }
+
+
+
+// MEDIA QUERY
+/*
+0 - 600px       => Mobile Phone
+600px - 900px   => Tablet Portrait
+900px - 1200px  => Desktop/Tablet Landscape
+1200px - 1800px => Large Device
+
+$device will accept:-
+-phone
+-tablet
+-desktop
+-big-dekstop
+
+=> Unit Conversion for media queries [we'll use 'em' instead of 'rem' / 'px'
+    
+1em = 16px;
+*/
+@mixin respond($device) {
+    // Check the device first before applying media queries
+    @if $device == phone {
+        @media(max-width: 37.5em) { @content }      //  37.5em = 600px
+    }
+
+    @if $device == tablet {
+        @media(max-width: 56.25em) { @content }     //  56.25em = 900px
+    }
+
+    @if $device == desktop {
+        @media(max-width: 75em) { @content }        //  75em =  1200px
+    }
+
+    @if $device == big-dektop {
+        @media(min-width: 112.5em) { @content }     //  112.5em = 1800px
+    } 
+}
