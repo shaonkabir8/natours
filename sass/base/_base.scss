@@ -27,7 +27,7 @@ body {
     box-sizing: border-box;
     padding: 3rem;
 
-    @include respond(phone) {
+    @include respond(tablet) {
         padding: 0;
     }
 }

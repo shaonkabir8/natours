@@ -12,6 +12,7 @@
 
     @include respond(tablet) {
         max-width: 50rem;
+        padding: 0 2rem;
     }
     
     @include clearfix;
