@@ -43,3 +43,11 @@ $device will accept:-
         @media(min-width: 112.5em) { @content }     //  112.5em = 1800px
     } 
 }
+
+// mixin for absolute positioning
+@mixin absoluteCenter {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
