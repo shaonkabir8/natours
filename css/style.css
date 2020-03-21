@@ -366,6 +366,34 @@ body {
   .card__price--value {
     font-size: 6rem;
     font-weight: 100; }
+  @media (max-width: 56.25em) {
+    .card {
+      height: auto;
+      border-radius: 3px;
+      background-color: #fff;
+      box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15); }
+      .card__side {
+        height: auto;
+        position: relative;
+        box-shadow: none; }
+        .card__side--back {
+          transform: rotateY(0);
+          clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%); }
+      .card:hover .card__side--front {
+        transform: rotateY(0); }
+      .card__details {
+        padding: 1rem 3rem; }
+      .card__cta {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: translate(0);
+        width: 100%;
+        padding: 7rem 4rem 4rem 4rem; }
+      .card__price-box {
+        margin-bottom: 3rem; }
+      .card__price--value {
+        font-size: 4rem; } }
 
 .story {
   background-color: rgba(255, 255, 255, 0.6);
@@ -377,6 +405,14 @@ body {
   font-size: 1.6rem;
   transform: skewX(-12deg);
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .story {
+      width: 100%;
+      padding: 4rem;
+      padding-left: 7rem; } }
+  @media (max-width: 37.5em) {
+    .story {
+      transform: skewX(0); } }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -387,12 +423,18 @@ body {
     clip-path: circle(50% at 50% 50%);
     transform: translateX(-3rem) skewX(12deg);
     position: relative; }
+    @media (max-width: 37.5em) {
+      .story__shape {
+        transform: translateX(-3rem) skewX(0); } }
   .story__image {
     height: 100%;
     transform: translateX(-4rem) scale(1.4);
     transition: all .5s; }
   .story__text {
     transform: skewX(12deg); }
+    @media (max-width: 37.5em) {
+      .story__text {
+        transform: skewX(0); } }
   .story__caption {
     position: absolute;
     left: 50%;
@@ -439,6 +481,9 @@ body {
   background-color: rgba(255, 255, 255, 0.5);
   border-bottom: 3px solid transparent;
   transition: all .3s; }
+  @media (max-width: 56.25em) {
+    .form__input {
+      width: 100%; } }
   .form__input:focus {
     outline: none;
     border-bottom: 3px solid #55c57a;
@@ -464,6 +509,10 @@ body {
 .form__radio-group {
   width: 49%;
   display: inline-block; }
+  @media (max-width: 56.25em) {
+    .form__radio-group {
+      width: 100%;
+      margin-bottom: 2rem; } }
 
 .form__radio-input {
   display: none; }
@@ -751,6 +800,9 @@ body {
   margin: 0 auto;
   margin-top: -25vh;
   color: #777; }
+  @media (max-width: 56.25em) {
+    .section-about {
+      padding: 20rem 0; } }
 
 .section-features {
   padding: 20rem 0;
@@ -759,6 +811,9 @@ body {
   background-size: cover;
   transform: skewY(-7deg);
   margin-top: -10rem; }
+  @media (max-width: 56.25em) {
+    .section-features {
+      padding: 15rem 0; } }
   .section-features > * {
     transform: skewY(7deg); }
 
@@ -766,16 +821,25 @@ body {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
   margin-top: -10rem; }
+  @media (max-width: 56.25em) {
+    .section-tour {
+      padding: 20rem 0 10rem 0; } }
 
 .section-story {
   position: relative;
   padding: 15rem 0;
   color: #777; }
+  @media (max-width: 56.25em) {
+    .section-story {
+      padding: 10rem 0; } }
 
 .section-book {
   padding: 15rem 0;
   background-image: linear-gradient(#7ed56f, #28b485);
   color: #777; }
+  @media (max-width: 56.25em) {
+    .section-book {
+      padding: 10rem 0; } }
 
 .book {
   background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url(../img/sea.jpg);
@@ -783,7 +847,20 @@ body {
   background-position: center;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: 3px; }
+  @media (max-width: 75em) {
+    .book {
+      background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 60%, transparent 60%), url(../img/sea.jpg);
+      background-size: cover; } }
+  @media (max-width: 56.25em) {
+    .book {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/sea.jpg); } }
 
 .form {
   width: 50%;
   padding: 6rem; }
+  @media (max-width: 75em) {
+    .form {
+      width: 60%; } }
+  @media (max-width: 56.25em) {
+    .form {
+      width: 100%; } }
