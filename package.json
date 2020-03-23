@@ -2,6 +2,7 @@
   "name": "natours",
   "version": "1.0.0",
   "description": "A coolest projects using only pure css",
+  "author": "Shaon Kabir <shaonkabir98@gmail.com>",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -18,12 +19,11 @@
     "type": "git",
     "url": "git+https://github.com/shaonkabir8/natours.git"
   },
-  "author": "Shaon Kabir",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/shaonkabir8/natours/issues"
   },
-  "homepage": "https://github.com/shaonkabir8/natours#readme",
+  "homepage": "https://adventurous.netlify.com/",
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "concat": "^1.0.3",
