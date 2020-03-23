@@ -31,3 +31,10 @@ body {
         padding: 0;
     }
 }
+
+
+// Change selection color
+::selection {
+    background-color: $color-primary;
+    color: $color-white;
+}
